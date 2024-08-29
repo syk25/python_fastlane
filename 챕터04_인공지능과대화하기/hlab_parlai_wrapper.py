@@ -12,9 +12,6 @@ from parlai.utils.world_logging import WorldLogger
 from parlai.agents.local_human.local_human import LocalHumanAgent
 import parlai.utils.logging as logging
 
-import random
-import json
-
 
 def setup_args(model_file, parser=None):
     if parser is None:
