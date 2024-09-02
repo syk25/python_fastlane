@@ -16,7 +16,7 @@ LANGUAGE = "kr"  # 출력 중 Weather에 한국어로 받을 수 있음. 영어�
 
 
 r = sr.Recognizer()
-microphone = sr.Microphone(device_index=1)
+microphone = sr.Microphone()
 
 print("날짜와 시간을 알려주는 프로그램!")
 
@@ -52,7 +52,7 @@ while True:
                 city_name = data["name"]
                 weather = data["weather"][0]["description"]
                 temperature = round(data["main"]["temp"] - 273.15, 2)  # 켈빈 온도 사용
-                
+
                 speech = f"현재 {city_name}의 날씨는 {weather}입니다. 온도는 {temperature}도 입니다."
 
             else:
