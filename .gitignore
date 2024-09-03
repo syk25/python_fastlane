@@ -3,3 +3,5 @@ mina.py
 mina_ver2.py
 *.txt
 *.json
+*.bin
+*.pkl
