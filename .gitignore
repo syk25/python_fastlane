@@ -5,3 +5,4 @@ mina_ver2.py
 *.json
 *.bin
 *.pkl
+*
